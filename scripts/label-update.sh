@@ -32,6 +32,11 @@ repos=(
     gomematic-scripts
     gomematic-android
     gomematic-ios
+    gomematic-go
+    gomematic-js
+    gomematic-php
+    gomematic-python
+    gomematic-ruby
 )
 
 labels=(
