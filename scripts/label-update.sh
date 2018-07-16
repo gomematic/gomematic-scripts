@@ -37,6 +37,7 @@ repos=(
     gomematic-php
     gomematic-python
     gomematic-ruby
+    gomematic-infra
 )
 
 labels=(
