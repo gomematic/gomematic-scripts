@@ -23,8 +23,8 @@ if [ -z "${DOCKER_USERNAME}" ]; then
     exit 1
 fi
 
-if [ -z "${DOCKER_USERNAME}" ]; then
-    echo "Please export DOCKER_USERNAME!"
+if [ -z "${DOCKER_PASSWORD}" ]; then
+    echo "Please export DOCKER_PASSWORD!"
     exit 1
 fi
 
@@ -52,9 +52,9 @@ for REPO in ${REPOS}; do
     esac
 
     DESCRIPTION=(
-        '# '"${TITLE}"' [![Build Status](http://drone.gomematic.tech/api/badges/gomematic/'"${REPO}"'/status.svg)](http://drone.gomematic.tech/gomematic/'"${REPO}"') [![](https://images.microbadger.com/badges/image/gomematic/'"${REPO}"'.svg)](http://microbadger.com/images/gomematic/'"${REPO}"' \"Get your own image badge on microbadger.com\")'
+        '# '"${TITLE}"' [![Build Status](http://cloud.drone.io/api/badges/gomematic/'"${REPO}"'/status.svg)](http://cloud.drone.io/gomematic/'"${REPO}"') [![](https://images.microbadger.com/badges/image/gomematic/'"${REPO}"'.svg)](http://microbadger.com/images/gomematic/'"${REPO}"' \"Get your own image badge on microbadger.com\")'
         '\n'
-        'Managed by [gomematic/'"${REPO}"'](https://github.com/gomematic/'"${REPO}"'), built and pushed with [Drone CI](http://drone.gomematic.tech/gomematic/'"${REPO}"').'
+        'Managed by [gomematic/'"${REPO}"'](https://github.com/gomematic/'"${REPO}"'), built and pushed with [Drone CI](http://cloud.drone.io/gomematic/'"${REPO}"').'
     )
 
     PAYLOAD=$(mktemp)

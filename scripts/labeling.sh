@@ -24,26 +24,28 @@ if ! hash ghi 2>/dev/null; then
 fi
 
 repos=(
-    homebrew-gomematic
-    gomematic-ui
+    gomematic-android
     gomematic-api
     gomematic-cli
+    gomematic-desktop
     gomematic-docs
-    gomematic-scripts
-    gomematic-android
-    gomematic-ios
     gomematic-go
+    gomematic-infra
+    gomematic-ios
     gomematic-js
     gomematic-php
     gomematic-python
     gomematic-ruby
-    gomematic-infra
+    gomematic-scripts
+    gomematic-ui
+    homebrew-gomematic
 )
 
 labels=(
     bug:fc2929
     duplicate:cccccc
     enhancement:84b6eb
+    good\ first\ issue:7057ff
     hacktoberfest:d4c5f9
     help\ wanted:159818
     in\ progress:ededed
@@ -53,6 +55,8 @@ labels=(
     poc:c2e0c6
     question:cc317c
     ready:ededed
+    rebase:ffa8a5
+    renovate:1d76db
     third-party:e99695
     translation:b60205
     wontfix:5319e7
